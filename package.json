@@ -1,0 +1,19 @@
+{
+  "name": "hockeystats",
+  "version": "1.0.0",
+  "description": "This is an app that displays hockey stats",
+  "main": "hockeyStats.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Jared Penner",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1"
+  }
+}
