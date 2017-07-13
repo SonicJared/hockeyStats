@@ -2,8 +2,8 @@ module.exports = function(app) {
   var hockeyStatsController = require('../controllers/hockeyStatsController');
 
 
-  // todoList Routes
-  app.route('/api/stats/:season')
+  // hockeyStats Routes
+  app.route('/api/playerStats/:season')
     .get(function(req, res){
     	season = req.params.season;
     	parameters = '';
@@ -11,6 +11,17 @@ module.exports = function(app) {
     		console.log('Hello');
     		res.send(body);
     	})
+
+    })
+
+    app.route('/api/teamStandings/:season')
+    .get(function(req, res){
+      season = req.params.season;
+      parameters = '';
+      hockeyStatsController.return_teamStandings(season, parameters, function(body){
+        console.log('Hello');
+        res.send(body);
+      })
 
     })
 };
