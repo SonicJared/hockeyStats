@@ -1,5 +1,56 @@
 <ion-view view-title="Player">
   <ion-content>
-    <h1>Player</h1>
+    <h1>{{players.playerArray[players.currentPlayer].player.FirstName}} {{players.playerArray[players.currentPlayer].player.LastName}} #{{players.playerArray[players.currentPlayer].player.JerseyNumber}}</h1>
+    <h3>{{players.playerArray[players.currentPlayer].team.Abbreviation}}</h3>
+
+    Position: {{players.playerArray[players.currentPlayer].player.Position}}
+    Age: {{players.playerArray[players.currentPlayer].player.Age}}
+    Height: {{players.playerArray[players.currentPlayer].player.Height}}
+    Weight: {{players.playerArray[players.currentPlayer].player.Weight}}
+    Birth City: {{players.playerArray[players.currentPlayer].player.BirthCity}}, {{players.playerArray[players.currentPlayer].player.BirthCountry}}
+    Birthday: {{players.playerArray[players.currentPlayer].player.BirthDate}}
+
+    <h2>Stats</h2>
+    <ion-list>
+    	<ion-item>
+    		Games Played: {{players.playerArray[players.currentPlayer].stats.GamesPlayed['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Goals: {{players.playerArray[players.currentPlayer].stats.stats.Goals['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Game Winning Goals: {{players.playerArray[players.currentPlayer].stats.stats.GameWinningGoals['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Hat Tricks: {{players.playerArray[players.currentPlayer].stats.stats.HatTricks['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Powerplay Goals: {{players.playerArray[players.currentPlayer].stats.stats.PowerplayGoals['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Assists: {{players.playerArray[players.currentPlayer].stats.stats.Assists['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Points: {{players.playerArray[players.currentPlayer].stats.stats.Points['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Shots: {{players.playerArray[players.currentPlayer].stats.stats.Shots['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Faceoffs Taken: {{players.playerArray[players.currentPlayer].stats.stats.Faceoffs['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Faceoff Percentage: {{players.playerArray[players.currentPlayer].stats.stats.FaceoffPercent['#text']}}%
+    	</ion-item>
+    	<ion-item>
+    		Hits: {{players.playerArray[players.currentPlayer].stats.stats.Hits['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Penalty Minutes: {{players.playerArray[players.currentPlayer].stats.stats.PenaltyMinutes['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Plus/Minus: {{players.playerArray[players.currentPlayer].stats.stats.PlusMinus['#text']}}
+    	</ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

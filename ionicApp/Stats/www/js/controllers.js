@@ -24,11 +24,27 @@ angular.module('hockeyStats.controllers', [])
 
 })
 
-.controller('pStatsCtrl', function($scope, $stateParams){
-  $scope.players = [{name: 'Pavelski', goals: 23, id: 1}, {name: 'Burns', goals: 21, id: 2}];
+.controller('pStatsCtrl', function($scope, $stateParams, playerService){
+  $scope.players = playerService;
+
+  $scope.setPlayer = function(ID){
+
+    for(i=0; i<=playerService.playerArray.length; i++){
+      if(ID == playerService.playerArray[i].player.ID){
+        playerService.currentPlayer = i;
+        console.log(i);
+        break;
+      }
+    }
+
+    console.log(ID);
+  }
 })
 
-.controller('playerCtrl', function($scope, $stateParams){
-
+.controller('playerCtrl', function($scope, $stateParams, playerService){
+  $scope.players = playerService;
+  $scope.$on('$ionicView.beforeEnter', function(){
+    $scope.player = playerService.playerArray[playerService.currentPlayer];  
+  })
 
 });

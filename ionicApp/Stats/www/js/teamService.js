@@ -9,7 +9,8 @@
 
 		var teams = {
 			teamArray: [],
-			currentTeam: 0
+			currentTeam: 0,
+			rosterArray: []
 		};
 
 		  var season = '2016-2017';

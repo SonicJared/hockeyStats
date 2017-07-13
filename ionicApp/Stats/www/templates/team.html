@@ -1,11 +1,42 @@
 <ion-view view-title="Team">
   <ion-content>
-    <h1>Team</h1>
+    <h1>{{teams.teamArray[teams.currentTeam].team.City}} {{teams.teamArray[teams.currentTeam].team.Name}}</h1>
 
-    {{teams.currentTeam}}
-
+  <!--   {{teams.currentTeam}}
     {{teams.teamArray[teams.currentTeam]}}
+    {{teams[position].stats}} -->
 
-    {{teams[position].stats}}
+    <ion-list>
+    	<ion-item>
+    		Ranking: {{teams.teamArray[teams.currentTeam].rank}}
+    	</ion-item>
+    	<ion-item>
+    		Points: {{teams.teamArray[teams.currentTeam].stats.stats.Points['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Record: {{teams.teamArray[teams.currentTeam].stats.stats.Wins['#text']}} - {{teams.teamArray[teams.currentTeam].stats.stats.Losses['#text']}} - {{teams.teamArray[teams.currentTeam].stats.stats.OvertimeLosses['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Goals For: {{teams.teamArray[teams.currentTeam].stats.stats.GoalsFor['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Goals Against: {{teams.teamArray[teams.currentTeam].stats.stats.GoalsAgainst['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Faceoff Percentage: {{teams.teamArray[teams.currentTeam].stats.stats.FaceoffPercent['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Powerplay Percentage: {{teams.teamArray[teams.currentTeam].stats.stats.PowerplayPercent['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Hits: {{teams.teamArray[teams.currentTeam].stats.stats.Hits['#text']}}
+    	</ion-item>
+    	<ion-item>
+    		Penalty Minutes: {{teams.teamArray[teams.currentTeam].stats.stats.PenaltyMinutes['#text']}}
+    	</ion-item>
+	</ion-list>
+
+	<h2>Roster</h2>
+
   </ion-content>
 </ion-view>
