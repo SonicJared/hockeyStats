@@ -1,14 +1,18 @@
 <ion-view view-title="Player">
-  <ion-content>
-    <h1>{{players.playerArray[players.currentPlayer].player.FirstName}} {{players.playerArray[players.currentPlayer].player.LastName}} #{{players.playerArray[players.currentPlayer].player.JerseyNumber}}</h1>
-    <h3>{{players.playerArray[players.currentPlayer].team.Abbreviation}}</h3>
+    <ion-content>
+    <div class="playerHeader" id="{{players.playerArray[players.currentPlayer].team.Abbreviation}}">
+        <h1>{{players.playerArray[players.currentPlayer].player.FirstName}} {{players.playerArray[players.currentPlayer].player.LastName}} #{{players.playerArray[players.currentPlayer].player.JerseyNumber}}</h1>
+        <h3>{{players.playerArray[players.currentPlayer].team.Abbreviation}}</h3>
 
-    Position: {{players.playerArray[players.currentPlayer].player.Position}}
-    Age: {{players.playerArray[players.currentPlayer].player.Age}}
-    Height: {{players.playerArray[players.currentPlayer].player.Height}}
-    Weight: {{players.playerArray[players.currentPlayer].player.Weight}}
-    Birth City: {{players.playerArray[players.currentPlayer].player.BirthCity}}, {{players.playerArray[players.currentPlayer].player.BirthCountry}}
-    Birthday: {{players.playerArray[players.currentPlayer].player.BirthDate}}
+        <div class="playerInfo">
+            <h5>Position: {{players.playerArray[players.currentPlayer].player.Position}}</h5>
+            <h5>Age: {{players.playerArray[players.currentPlayer].player.Age}}</h5>
+            <h5>Height: {{players.playerArray[players.currentPlayer].player.Height}}</h5>
+            <h5>Weight: {{players.playerArray[players.currentPlayer].player.Weight}}</h5>
+            <h5>Birth City: {{players.playerArray[players.currentPlayer].player.BirthCity}}, {{players.playerArray[players.currentPlayer].player.BirthCountry}}</h5>
+            <h5>Birthday: {{players.playerArray[players.currentPlayer].player.BirthDate}}</h5>
+        </div>
+    </div>
 
     <h2>  Stats</h2>
     <ion-list>

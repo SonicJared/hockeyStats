@@ -65,3 +65,103 @@ span.headerPosition{
 	position: fixed;
     left: 55%;
 }
+.playerHeader {
+	border-radius: 16px;
+	padding: 8px;
+}
+div.playerInfo h5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*Team Colors*/
+#ANA {
+	background-color: #F57D31;
+}
+#BOS{
+	background-color: #FDB930;
+}
+#BUF{
+	background-color: #002D62;
+}
+#CAR{
+	background-color: #E51A38;
+}
+#CBJ{
+	background-color: #002147;
+}
+#CGY{
+	background-color: #CB0D0D;
+}
+#CHI{
+	background-color: #C60C30;
+}
+#COL{
+	background-color: #822433;
+}
+#DAL{
+	background-color: #016F4A;
+}
+#DET{
+	background-color: #E51837;
+}
+#EDM{
+	background-color: #013E7F;
+}
+#FLA{
+	background-color: #C51230;
+}
+#LAK{
+	background-color: #000000;
+}
+#MIN{
+	background-color: #C51230;
+}
+#MTL{
+	background-color: #C51230;
+}
+#NAS{
+	background-color: #FDBB30;
+}
+#NJD{
+	background-color: #E03A3E;
+}
+#NYI{
+	background-color: #F57D31;
+}
+#NYR{
+	background-color: #E51837;
+}
+#OTT{
+	background-color: #E51837;
+}
+#PHI{
+	background-color: #F4793E;
+}
+#PHX{
+	background-color: #98012E;
+}
+#PIT{
+	background-color: #C5B358;
+}
+#SJS{
+	background-color: #007889;
+}
+#STL{
+	background-color: #00529C;
+}
+#TBL{
+	background-color: #003D7C;
+}
+#TOR{
+	background-color: #013E7F;
+}
+#VAN{
+	background-color: #003E7E;
+}
+#WPG{
+	background-color: #002D62;
+}
+#WSH, #WSH *{
+	background-color: #C60C30;
+	color: white;
+}
