@@ -1,7 +1,7 @@
 // request Request 
 var btoa = require('btoa');
-var USER = 'jaredpenner'
-    PASS = 'Stats123';
+var CONFIG = require('../config');
+
 
 exports.request = request;
 
@@ -14,7 +14,7 @@ function request(URL, callback){
         port: '443',
         path: URL,
         method: 'GET',
-        headers: {"Authorization":"Basic " + btoa(USER + ":" + PASS)}
+        headers: {"Authorization":"Basic " + btoa(CONFIG.sports_user + ":" + CONFIG.sports_pass)}
     };
     httpOptions.headers['User-Agent'] = 'node ' + process.version;
  
@@ -41,11 +41,11 @@ function request(URL, callback){
     .on('error', (error) => {
         callback(error);
     });
-    request.write("")
+    request.write("");
     request.end();
 }
 
-/*request('/v1.1/pull/nhl/2016-2017-regular/cumulative_player_stats.json?playerstats=G,A,Pts,Sh', function(error, statusCode, headers, body){
+/** /request('/v1.1/pull/nhl/2016-2017-regular/cumulative_player_stats.json?playerstats=G,A,Pts,Sh', function(error, statusCode, headers, body){
     console.log('Hello');
 
     console.log('Error ' + error);
@@ -53,4 +53,4 @@ function request(URL, callback){
     console.log('head ' + headers);
     console.log('body ' + body);
 
-})*/
+})/**/
