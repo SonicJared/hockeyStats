@@ -6,3 +6,4 @@ plugins/
 # ignore config files
 
 api/config.js
+api/config.js
