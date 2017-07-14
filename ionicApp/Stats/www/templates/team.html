@@ -4,7 +4,7 @@
 		{{teams.teamArray[teams.currentTeam]}}
 		{{teams[position].stats}} -->
 		<ion-tabs class="tabs-positive tabs-icon-bottom has-header">
-			<ion-tab title="Stats" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+			<ion-tab title="Stats" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline">
 				<ion-content class="has-header">
 					<div class="teamHeader">
 						<h1>{{teams.teamArray[teams.currentTeam].team.City}} {{teams.teamArray[teams.currentTeam].team.Name}}</h1>
@@ -40,12 +40,13 @@
 					</ion-list>
 				</ion-content>
 			</ion-tab>
-			<ion-tab title="Roster" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline">
+			<ion-tab title="Roster" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
 				<ion-content class="has-header">
 					<div class="teamHeader">
 						<h1>{{teams.teamArray[teams.currentTeam].team.City}} {{teams.teamArray[teams.currentTeam].team.Name}}</h1>
 					</div>
 					<h2>Roster</h2>
+					{{teams.teamRoster}}
 				</ion-content>
 			</ion-tab>
 		</ion-tabs>
