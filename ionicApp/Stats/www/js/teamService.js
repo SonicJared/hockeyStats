@@ -30,7 +30,7 @@
 
 	 	function getRoster(season){
 	 		api.get(api.url + '/api/teamRoster/' + season + '/' + teams.currentAbbreviation, function(results){
-	  		  teams.teamRoster = results;
+	  		  teams.teamRoster = results.cumulativeplayerstats.playerstatsentry;
 	  		  console.log(results);
 	  		})
 	 	}

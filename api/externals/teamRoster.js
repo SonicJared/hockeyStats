@@ -5,7 +5,7 @@ exports.get_teamRoster = get_teamRoster;
 function get_teamRoster(season, parameters, callback){
 	// request Request 
 	console.log('season: ' + season + 'parameters: ' + parameters);
-	api_call.request('/v1.1/pull/nhl/'+season+'/roster_players.json' + parameters, function(error, statusCode, headers, body){
+	api_call.request('/v1.1/pull/nhl/'+season+'/cumulative_player_stats.json' + parameters, function(error, statusCode, headers, body){
 		if(error != null){
 			console.log('Error ' + error);
 		    console.log('statusCode ' + statusCode);

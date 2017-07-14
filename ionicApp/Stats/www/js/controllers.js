@@ -22,7 +22,7 @@ angular.module('hockeyStats.controllers', [])
 
 })
 
-.controller('teamCtrl', function($scope, $stateParams, teamService) {
+.controller('teamCtrl', function($scope, $stateParams, teamService, playerService) {
   $scope.teams = teamService;
 
   $scope.$on('$ionicView.beforeEnter', function(){
@@ -35,6 +35,21 @@ angular.module('hockeyStats.controllers', [])
     console.log($scope.roster);
     console.log(teamService.teamRoster);
   })
+
+  $scope.players = playerService;
+
+  $scope.setPlayer = function(ID){
+
+    for(i=0; i<=playerService.playerArray.length; i++){
+      if(ID == playerService.playerArray[i].player.ID){
+        playerService.currentPlayer = i;
+        console.log(i);
+        break;
+      }
+    }
+
+    console.log(ID);
+  }
 
 })
 

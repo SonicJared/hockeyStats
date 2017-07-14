@@ -1,13 +1,13 @@
-<ion-view view-title="PlayerStats">
+<ion-view view-title="Player Stats">
 
   <ion-content class="has-header">
     <ion-list>
-	  <ion-item>
-		<h2 class="listHeader"><span class="pStatsName">Name</span><span class="pStatsG"> G </span><span class="pStatsA">A</span><span class="pStatsPts">Pts</span></h2>
-	  </ion-item>
-      <ion-item ng-repeat="player in players.playerArray" href="#/app/pStats/{{player.player.ID}}" ng-click="setPlayer({{player.player.ID}})">
-        <span class="pStatsListName">{{player.player.FirstName}} {{player.player.LastName}},</span> <span class="pStatsListTeam"> {{player.team.Abbreviation}}</span><span class="pStatsListG">{{player.stats.stats.Goals['#text']}} </span> <span class="pStatsListA">{{player.stats.stats.Assists['#text']}} </span> <span class="pStatsListPts">{{player.stats.stats.Points['#text']}}</span>
-      </ion-item>
+  	  <ion-item>
+  		  <h2 class="listHeader"><span class="pStatsName">Name</span><span class="headerPosition">Pos</span><span class="pStatsG"> G </span><span class="pStatsA">A</span><span class="pStatsPts">Pts</span></h2>
+  	  </ion-item>
+        <ion-item ng-repeat="player in players.playerArray" href="#/app/pStats/{{player.player.ID}}" ng-click="setPlayer({{player.player.ID}})">
+          <span class="pStatsListName">{{player.player.FirstName}} {{player.player.LastName}},</span> <span class="pStatsListTeam"> {{player.team.Abbreviation}}</span><span class="listPosition">{{player.player.Position}}</span><span class="pStatsListG">{{player.stats.stats.Goals['#text']}} </span> <span class="pStatsListA">{{player.stats.stats.Assists['#text']}} </span> <span class="pStatsListPts">{{player.stats.stats.Points['#text']}}</span>
+        </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>

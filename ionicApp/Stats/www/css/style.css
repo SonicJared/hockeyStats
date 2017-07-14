@@ -28,7 +28,7 @@ span.pStatsListName{
 }
 span.pStatsG, span.pStatsListG{
 	position: fixed;
-	left: 60%;
+	left: 65%;
 }
 span.pStatsA, span.pStatsListA{
 	position: fixed;
@@ -36,7 +36,7 @@ span.pStatsA, span.pStatsListA{
 }
 span.pStatsPts, span.pStatsListPts{
 	position: fixed;
-	left: 90%;
+	left: 85%;
 }
 ion-item.keyHeader{
 	/*top: 0px;
@@ -56,4 +56,12 @@ h2.listHeader{
 }
 .teamHeader {
 	text-align: center;
+}
+span.listPosition{
+    position: fixed;
+    left: 55%;
+}
+span.headerPosition{
+	position: fixed;
+    left: 55%;
 }

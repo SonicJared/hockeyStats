@@ -46,7 +46,14 @@
 						<h1>{{teams.teamArray[teams.currentTeam].team.City}} {{teams.teamArray[teams.currentTeam].team.Name}}</h1>
 					</div>
 					<h2>Roster</h2>
-					{{teams.teamRoster}}
+					<ion-list>
+				  	  <ion-item>
+				  		  <h2 class="listHeader"><span class="pStatsName">Name</span> <span class="headerPosition">Pos</span><span class="pStatsG"> G </span><span class="pStatsA">A</span><span class="pStatsPts">Pts</span></h2>
+				  	  </ion-item>
+				      <ion-item ng-repeat="player in teams.teamRoster" href="#/app/pStats/{{player.player.ID}}" ng-click="setPlayer({{player.player.ID}})">
+				        <span class="pStatsListName">#{{player.player.JerseyNumber}} {{player.player.FirstName}} {{player.player.LastName}}</span><span class="listPosition">{{player.player.Position}}</span><span class="pStatsListG">{{player.stats.stats.Goals['#text']}} </span> <span class="pStatsListA">{{player.stats.stats.Assists['#text']}} </span> <span class="pStatsListPts">{{player.stats.stats.Points['#text']}}</span>
+				      </ion-item>
+				    </ion-list>
 				</ion-content>
 			</ion-tab>
 		</ion-tabs>

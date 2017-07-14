@@ -1,5 +1,9 @@
-<ion-view view-title="Search">
-  <ion-content>
-    <h1>Search</h1>
-  </ion-content>
+<ion-view view-title="Player Search">
+	<div class="bar bar-header bar-light">
+		<!-- Search input -->
+		<input type="text" ng-model="search.userInput" class="mdl-layout-title" placeholder="{{search.placeholder}}" ng-keydown="$event.which === 13 && search.service.search(search.userInput)" ng-keyup="search.autosearch()">	<!-- $event.which === 13 means press enter -->
+	</div>
+    <ion-content>
+        <h1>Search</h1>
+    </ion-content>
 </ion-view>
