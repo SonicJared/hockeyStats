@@ -1,8 +1,11 @@
 <ion-view view-title="Standings">
   <ion-content>
     <ion-list>
+      <ion-item>
+        <h2 class="listHeader"><span class="rank">Rank</span><span class="teamNameHeader">Team</span><span class="recordHeader"> Record </span><span class="teamPts">Pts</span></h2>
+  	  </ion-item>
       <ion-item ng-repeat="team in teams.teamArray" href="#/app/standings/{{team.team.ID}}" ng-click="setTeam({{team.rank}})">
-        {{team.rank}} || {{team.team.Name}} W: {{team.stats.stats.Wins['#text']}} L: {{team.stats.stats.Losses['#text']}} Pts: {{team.stats.stats.Points['#text']}}
+        <span class="rankNumber">{{team.rank}} </span> <span class="teamName"> {{team.team.Name}} </span><span class="standingsRecord">{{team.stats.stats.Wins['#text']}} - {{team.stats.stats.Losses['#text']}} - {{team.stats.stats.OvertimeLosses['#text']}} </span> <span class="teamPts">{{team.stats.stats.Points['#text']}}</span>
       </ion-item>
     </ion-list>
   </ion-content>

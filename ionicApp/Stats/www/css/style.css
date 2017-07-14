@@ -1,1 +1,59 @@
-/* Empty. Add your own CSS if you like */
+
+span.rankNumber {
+	padding: 0px 16px;
+}
+span.rank {
+	padding: 0px 2px;
+}
+span.teamNameHeader{
+	padding: 0px 16px;
+}
+span.standingsRecord{
+	position: fixed;
+    left: 50%;
+}
+span.recordHeader{
+	position: fixed;
+	left: 50%;
+}
+span.teamPts{
+	position: fixed;
+	left: 80%;
+}
+span.pStatsName{
+	padding: 0px 16px;
+}
+span.pStatsListName{
+
+}
+span.pStatsG, span.pStatsListG{
+	position: fixed;
+	left: 60%;
+}
+span.pStatsA, span.pStatsListA{
+	position: fixed;
+	left: 75%;
+}
+span.pStatsPts, span.pStatsListPts{
+	position: fixed;
+	left: 90%;
+}
+ion-item.keyHeader{
+	/*top: 0px;
+	left: 0px;
+	height: auto;
+	width: 100%;*/
+}
+ion-list.pStats{
+	padding-top: 34px;
+	top: 34px;
+}
+h2.listHeader{
+	font-weight: bold;
+}
+.teamHeader {
+	padding-top: 48px;
+}
+h1.teamHeader {
+	text-align: center;
+}
