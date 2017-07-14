@@ -2,3 +2,7 @@
 node_modules/
 platforms/
 plugins/
+
+# ignore config files
+
+api/config.js
