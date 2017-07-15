@@ -51,6 +51,14 @@ ion-list.pStats{
 h2.listHeader{
 	font-weight: bold;
 }
+ion-item.listHeader{
+	background-color: lightgray;
+}
+h2.stats {
+	border-top: 2px;
+	border-color: gray;
+	padding-left: 5px;
+}
 .teamHeader {
 	padding-top: 48px;
 }
@@ -73,95 +81,208 @@ div.playerInfo h5 {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+.arrow{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    border-radius: 4px;
+    height: 54px;
+}
+.pStatsArrow{
+	position: absolute;
+    right: 40%;
+    top: 30%;
+}
+.statsItem{
+	border-color: gray;
+	border-width: 2px;
+	border-left-width: 4x;
+	border-color-left: black;
+}
+ion-item.standingsList{
+	margin: 5px;
+}
 /*Team Colors*/
-#ANA {
-	background-color: #F57D31;
+#ANA, #ANA * {
+	background-color: #F57D31;*/
+	border-width: 2px;
+	border-color: #F57D31;
+	color: #FFFFFF;
+	border-width: 2px;
+	border-color: #F57D31;
 }
-#BOS{
-	background-color: #FDB930;
+#BOS, #BOS * {
+	background-color: #FDB930;*/
+	border-width: 2px;
+	border-color: #FDB930;
+	color: 000000;
 }
-#BUF{
-	background-color: #002D62;
+#BUF, #BUF *{
+	background-color: #002D62;*/
+	border-width: 2px;
+	border-color: #002D62;
+	color: #FDB930;
 }
-#CAR{
-	background-color: #E51A38;
+#CAR, #CAR *{
+	background-color: #E51A38;*/
+	border-width: 2px;
+	border-color: #E51A38;
+	color: white;
 }
-#CBJ{
-	background-color: #002147;
+#CBJ, #CBJ *{
+	background-color: #002147;*/
+	border-width: 2px;
+	border-color: #002147;
+	color: #C60C30;
 }
-#CGY{
-	background-color: #CB0D0D;
+#CGY, #CGY *{
+	background-color: #CB0D0D;*/
+	border-width: 2px;
+	border-color: #CB0D0D;
+	color: #FDBF12;
 }
-#CHI{
-	background-color: #C60C30;
+#CHI, #CHI *{
+	background-color: #C60C30;*/
+	border-width: 2px;
+	border-color: #C60C30;
+	color:  #000000;
 }
-#COL{
-	background-color: #822433;
+#COL, #COL *{
+	background-color: #822433;*/
+	border-width: 2px;
+	border-color: #822433;
+	color: #165788;
 }
-#DAL{
-	background-color: #016F4A;
+#DAL, #DAL *{
+	background-color: #016F4A;*/
+	border-width: 2px;
+	border-color: #016F4A;
+	color: #A7A8AC;
 }
-#DET{
-	background-color: #E51837;
+#DET, #DET *{
+	background-color: #E51837;*/
+	border-width: 2px;
+	border-color: #E51837;
+	color: #FFFFFF;
 }
-#EDM{
-	background-color: #013E7F;
+#EDM, #EDM *{
+	background-color: #013E7F;*/
+	border-width: 2px;
+	border-color: #013E7F;
+	color: #EB6E1E;
 }
-#FLA{
-	background-color: #C51230;
+#FLO, #FLO *{
+	background-color: #C51230;*/
+	border-width: 2px;
+	border-color: #C51230;
+	color: #FFFFFF;
 }
-#LAK{
-	background-color: #000000;
+#LAK, #LAK *{
+	background-color: #000000;*/
+	border-width: 2px;
+	border-color: #000000;
+	color: #FFFFFF;
 }
-#MIN{
-	background-color: #C51230;
+#MIN, #MIN *{
+	background-color: #C51230;*/
+	border-width: 2px;
+	border-color: #C51230;
+	color: #EEE3C7;
 }
-#MTL{
-	background-color: #C51230;
+#MTL, #MTL *{
+	background-color: #C51230;*/
+	border-width: 2px;
+	border-color: #C51230;
+	color: #FFFFFF;
 }
-#NAS{
-	background-color: #FDBB30;
+#NSH, #NSH *{
+	background-color: #FDBB30;*/
+	border-width: 2px;
+	border-color: #FDBB30;
+	color: #002D62;
 }
-#NJD{
-	background-color: #E03A3E;
+#NJD, #NJD *{
+	background-color: #E03A3E;*/
+	border-width: 2px;
+	border-color: #E03A3E;
+	color: #FFFFFF;
 }
-#NYI{
-	background-color: #F57D31;
+#NYI, #NYI *{
+	background-color: #F57D31;*/
+	border-width: 2px;
+	border-color: #F57D31;
+	color: #FFFFFF;
 }
-#NYR{
-	background-color: #E51837;
+#NYR, #NYR *{
+	background-color: #E51837;*/
+	border-width: 2px;
+	border-color: #E51837;
+	color: #FFFFFF;
 }
-#OTT{
-	background-color: #E51837;
+#OTT, #OTT *{
+	background-color: #E51837;*/
+	border-width: 2px;
+	border-color: #E51837;
+	color: white;
 }
-#PHI{
-	background-color: #F4793E;
+#PHI, #PHI *{
+	background-color: #F4793E;*/
+	border-width: 2px;
+	border-color: #F4793E;
+	color: #FFFFFF;
 }
-#PHX{
-	background-color: #98012E;
+#PHX, #PHX *{
+	background-color: #98012E;*/
+	border-width: 2px;
+	border-color: #98012E;
+	color: #EEE3C7;
 }
-#PIT{
-	background-color: #C5B358;
+#PIT, #PIT *{
+	background-color: #C5B358;*/
+	border-width: 2px;
+	border-color: #C5B358;
+	color: black;
 }
-#SJS{
-	background-color: #007889;
+#SJS, #SJS *{
+	background-color: #007889;*/
+	border-width: 2px;
+	border-color: #007889;
+	color: white;
 }
-#STL{
-	background-color: #00529C;
+#STL, #STL *{
+	background-color: #00529C;*/
+	border-width: 2px;
+	border-color: #00529C;
+	color: white;
 }
-#TBL{
-	background-color: #003D7C;
+#TBL, #TBL *{
+	background-color: #003D7C;*/
+	border-width: 2px;
+	border-color: #003D7C;
+	color: white;
 }
-#TOR{
-	background-color: #013E7F;
+#TOR, #TOR *{
+	background-color: #013E7F;*/
+	border-width: 2px;
+	border-color: #013E7F;
+	color: white;
 }
-#VAN{
-	background-color: #003E7E;
+#VAN, #VAN *{
+	background-color: #003E7E;*/
+	border-width: 2px;
+	border-color: #003E7E;
+	color: white;
 }
-#WPG{
-	background-color: #002D62;
+#WPJ, #WPJ *{
+	background-color: #002D62;*/
+	border-width: 2px;
+	border-color: #002D62;
+	color: white;
 }
 #WSH, #WSH *{
-	background-color: #C60C30;
+	background-color: #C60C30;*/
+	border-width: 2px;
+	border-color: #C60C30;
 	color: white;
 }

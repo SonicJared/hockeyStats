@@ -3,7 +3,7 @@
 	<!--   {{teams.currentTeam}}
 		{{teams.teamArray[teams.currentTeam]}}
 		{{teams[position].stats}} -->
-		<ion-tabs class="tabs-positive tabs-icon-bottom has-header">
+		<ion-tabs class="{{teams.teamArray[teams.currentTeam].team.Abbreviation}}Tab tabs-positive tabs-icon-bottom has-header">
 			<ion-tab title="Stats" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline">
 				<ion-content class="has-header">
 					<div class="teamHeader">
