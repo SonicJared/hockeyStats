@@ -12,6 +12,7 @@ angular.module('hockeyStats.controllers', [])
 
   $scope.setTeam = function(rank){
     teamService.currentTeam = rank - 1;
+    teamService.teamRoster = [];
 
 
     teamService.currentAbbreviation = teamService.teamArray[teamService.currentTeam].team.Abbreviation;
